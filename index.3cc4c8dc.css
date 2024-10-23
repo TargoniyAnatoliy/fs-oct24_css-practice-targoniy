@@ -6,8 +6,10 @@
 .container {
   box-sizing: border-box;
   grid-template-columns: repeat(2, 200px);
-  gap: 10px 20px;
-  max-width: 410px;
+  justify-content: center;
+  justify-items: center;
+  gap: 20px 10px;
+  width: 450px;
   margin: 0 auto;
   display: grid;
 }
@@ -15,21 +17,20 @@
 @media (width >= 1000px) {
   .container {
     grid-template-columns: repeat(4, 200px);
-    max-width: 830px;
+    width: 910px;
   }
 }
 
 .person {
   flex-direction: column;
   align-items: center;
-  width: 200px;
-  padding: 10px;
+  padding: 10px 10px 16px;
   display: flex;
 }
 
 .person .photo {
   border-radius: 50%;
-  width: 100%;
+  width: 200px;
   height: 0;
   padding-bottom: 100%;
   position: relative;
@@ -38,8 +39,8 @@
 
 .person .photo img {
   object-fit: cover;
-  width: 100%;
-  height: 100%;
+  max-width: 100%;
+  max-height: 100%;
   margin-bottom: 8px;
   position: absolute;
 }
@@ -60,13 +61,19 @@
 
 .person .details .name {
   color: #2f4f4f;
+  margin-bottom: 9px;
   font-size: 20px;
   font-weight: 700;
   line-height: 23px;
 }
 
-.person .details .name .extra {
-  display: none;
+.person .details .extra {
+  color: #000;
+  justify-content: center;
+  align-items: center;
+  font-size: 18px;
+  line-height: 21px;
+  display: flex;
 }
 
 .person:hover {
