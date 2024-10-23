@@ -46,7 +46,6 @@
 
 .person .rank {
   color: #8b0000;
-  z-index: 5;
   background-color: #fff;
   border-radius: 50%;
   justify-content: center;
@@ -71,6 +70,8 @@
 }
 
 .person:hover {
+  z-index: 5;
   background-color: #eee;
+  transform: scale(1.1);
 }
 /*# sourceMappingURL=index.3cc4c8dc.css.map */
