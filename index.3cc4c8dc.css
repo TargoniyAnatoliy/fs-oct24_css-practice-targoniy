@@ -38,6 +38,7 @@
   height: 0;
   margin-bottom: 8px;
   padding-bottom: 100%;
+  transition: all 1s;
   position: relative;
   overflow: hidden;
 }
@@ -47,11 +48,6 @@
   width: 100%;
   height: 100%;
   position: absolute;
-}
-
-.person__photo:hover {
-  border-radius: 60px;
-  transform: scale(1.02);
 }
 
 .person__rank {
@@ -90,5 +86,9 @@
   z-index: 5;
   background-color: #eee;
   transform: scale(1.2);
+}
+
+.person:hover__photo {
+  animation: 2s linear imageScale;
 }
 /*# sourceMappingURL=index.3cc4c8dc.css.map */
